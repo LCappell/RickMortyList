@@ -11,7 +11,7 @@ const CharacterHeader: FC = () => {
       <BsArrowLeft
         id='return-arrow'
         size={'3em'}
-        onClick={() => navigate('/')}
+        onClick={() => navigate(-1)}
       />
 
       <h1 className='header-title'>Character Information</h1>

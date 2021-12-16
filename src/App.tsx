@@ -10,7 +10,9 @@ const App: FC = () => {
       <Router>
         <Routes>
           <Route path='/' element={<ListPage />} />
-          <Route path='/character-info' element={<CharacterPage />} />
+          <Route path='/:id' element={<ListPage />} />
+
+          <Route path='/:id/character-info' element={<CharacterPage />} />
         </Routes>
       </Router>
     </div>

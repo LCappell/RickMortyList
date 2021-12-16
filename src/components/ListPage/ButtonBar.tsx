@@ -1,29 +1,41 @@
 import React, { FC } from 'react';
 import '../../styles/ListPage/ButtonBar.css';
 import RickPicture from '../../assets/rickmortybg.jpeg';
+import { useNavigate } from 'react-router-dom';
 
 type Props = {
-  pageCount: number;
-  setPageCount: (pageCount: number) => void;
+  id: number;
 };
 
-const ButtonBar: FC<Props> = ({ pageCount, setPageCount }) => {
+const ButtonBar: FC<Props> = ({ id }) => {
+  const navigate = useNavigate();
   const increasePageCount = () => {
-    pageCount > 0 && setPageCount(pageCount + 1);
+    if (id >= 0 && id < 42) {
+      id++;
+      navigate('/' + id);
+    }
   };
 
   const decreasePageCount = () => {
-    pageCount > 1 && setPageCount(pageCount - 1);
+    if (id > 1) {
+      id--;
+      navigate('/' + id);
+    }
   };
 
-  console.log(pageCount);
   return (
     <div className='button-area'>
       <button className='btn' type='button' onClick={decreasePageCount}>
         Previous
       </button>
 
-      <button className='btn' type='button' onClick={increasePageCount}>
+      <button
+        className='btn'
+        type='button'
+        onClick={() => {
+          increasePageCount();
+        }}
+      >
         Next
       </button>
 

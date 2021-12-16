@@ -4,15 +4,18 @@ import { fetchData } from '../../Service/ApiService';
 import CharacterItem from './CharacterItem';
 import ButtonBar from './ButtonBar';
 import { Character } from '../../Types/Character';
+import { useParams } from 'react-router-dom';
 
 const CharacterList: FC = () => {
+  const { id = 1 } = useParams();
+
   const [characters, setCharacters] = useState([]);
-  const [pageCount, setPageCount] = useState(1);
+
   useEffect(() => {
-    fetchData(`character?page=${pageCount}`).then((res) => {
+    fetchData(`character?page=${id}`).then((res) => {
       setCharacters(res.results);
     });
-  }, [pageCount]);
+  }, [id]);
 
   return (
     <div className='container'>
@@ -24,7 +27,8 @@ const CharacterList: FC = () => {
           <CharacterItem key={item.id} item={item} />
         ))}
       </div>
-      <ButtonBar setPageCount={setPageCount} pageCount={pageCount} />
+      {/* @ts-ignore */}
+      <ButtonBar id={id} />
     </div>
   );
 };
