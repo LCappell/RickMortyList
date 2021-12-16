@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import '../../styles/ButtonBar.css';
+import '../../styles/ListPage/ButtonBar.css';
 import RickPicture from '../../assets/rickmortybg.jpeg';
 
 type Props = {

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import '../../styles/CharacterItem.css';
+import '../../styles/ListPage/CharacterItem.css';
 import { Character } from '../../Types/Character';
 import { useNavigate } from 'react-router-dom';
 

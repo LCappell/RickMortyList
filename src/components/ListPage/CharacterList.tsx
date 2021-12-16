@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from 'react';
-import '../../styles/CharacterList.css';
+import '../../styles/ListPage/CharacterList.css';
 import { fetchData } from '../../Service/ApiService';
 import CharacterItem from './CharacterItem';
 import ButtonBar from './ButtonBar';
@@ -17,7 +17,7 @@ const CharacterList: FC = () => {
   return (
     <div className='container'>
       <div className='header-area'>
-        <h1 id='character-list-header'>Character List</h1>
+        <h1 id='character-list-header'>The Cast of Rick and Morty </h1>
       </div>
       <div className='character-list-area'>
         {characters.map((item: Character) => (

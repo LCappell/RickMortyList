@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Header from '../components/ListPage/Header';
 import CharacterList from '../components/ListPage/CharacterList';
 
-const ListPage = () => {
+const ListPage: FC = () => {
   return (
     <div className='main-container'>
       <Header />

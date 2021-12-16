@@ -1,0 +1,21 @@
+.character-header-area {
+  position: relative;
+  width: 100vw;
+  text-align: center;
+  margin: 20px;
+}
+
+.header-title {
+  color: #fff;
+}
+
+#return-arrow {
+  position: absolute;
+  color: white;
+  left: 0;
+}
+
+#return-arrow:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
