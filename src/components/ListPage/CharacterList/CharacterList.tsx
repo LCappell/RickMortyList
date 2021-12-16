@@ -1,9 +1,9 @@
 import React, { FC, useEffect, useState } from 'react';
-import '../../styles/ListPage/CharacterList.css';
-import { fetchData } from '../../Service/ApiService';
-import CharacterItem from './CharacterItem';
-import ButtonBar from './ButtonBar';
-import { Character } from '../../Types/Character';
+import './CharacterList.css';
+import { fetchData } from '../../../Service/ApiService';
+import CharacterItem from '../CharacterItem/CharacterItem';
+import ButtonBar from '../ButtonBar/ButtonBar';
+import { Character } from '../../../Types/Character';
 import { useParams } from 'react-router-dom';
 
 const CharacterList: FC = () => {
@@ -22,7 +22,7 @@ const CharacterList: FC = () => {
       <div className='header-area'>
         <h1 id='character-list-header'>The Cast of Rick and Morty </h1>
       </div>
-      <div className='character-list-area'>
+      <div data-testid='character-item' className='character-list-area'>
         {characters.map((item: Character) => (
           <CharacterItem key={item.id} item={item} />
         ))}

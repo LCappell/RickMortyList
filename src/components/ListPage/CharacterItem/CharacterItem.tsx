@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import '../../styles/ListPage/CharacterItem.css';
-import { Character } from '../../Types/Character';
+import './CharacterItem.css';
+import { Character } from '../../../Types/Character';
 import { useNavigate } from 'react-router-dom';
 
 type Props = {

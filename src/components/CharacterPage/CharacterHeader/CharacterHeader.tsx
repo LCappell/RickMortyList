@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import '../../styles/CharacterPage/CharacterHeader.css';
-import { Character } from '../../Types/Character';
+import './CharacterHeader.css';
+import { Character } from '../../../Types/Character';
 import { BsArrowLeft } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 

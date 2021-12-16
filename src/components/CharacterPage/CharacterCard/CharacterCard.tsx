@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import { Character } from '../../Types/Character';
-import '../../styles/CharacterPage/CharacterCard.css';
+import { Character } from '../../../Types/Character';
+import './CharacterCard.css';
 
 type Props = {
   characterInfo: Character;
@@ -22,9 +22,20 @@ const CharacterCard: FC<Props> = ({ characterInfo }) => {
           <p>Status: {characterInfo.status}</p>
           <p>Species: {characterInfo.species}</p>
           <p>Gender: {characterInfo.gender}</p>
-          <p>Origin: {characterInfo.origin.name}</p>
-          <p>Last Location : {characterInfo.location.name}</p>
-          <p>Appearances: {characterInfo.episode.length}</p>
+          <p>
+            Origin:{' '}
+            {characterInfo.origin !== undefined && characterInfo.origin.name}
+          </p>
+          <p>
+            Last Location :{' '}
+            {characterInfo.location !== undefined &&
+              characterInfo.location.name}
+          </p>
+          <p>
+            Appearances:{' '}
+            {characterInfo.episode !== undefined &&
+              characterInfo.episode.length}
+          </p>
         </div>
       </div>
     </div>

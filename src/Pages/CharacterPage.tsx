@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { useLocation } from 'react-router-dom';
-import CharacterCard from '../components/CharacterPage/CharacterCard';
-import CharacterHeader from '../components/CharacterPage/CharacterHeader';
+import CharacterCard from '../components/CharacterPage/CharacterCard/CharacterCard';
+import CharacterHeader from '../components/CharacterPage/CharacterHeader/CharacterHeader';
 import { Character } from '../Types/Character';
 
 const CharacterPage: FC = () => {
