@@ -1,0 +1,30 @@
+.character-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  width: 18rem;
+  height: 15rem;
+  background-color: #1c1917;
+  border-radius: 15px;
+}
+
+.character-name {
+  color: #fff;
+  background-color: #1c1917;
+}
+
+#character-img {
+  width: 13rem;
+  height: 10rem;
+  border-radius: 15px;
+}
+
+.character-container:hover {
+  transform: scale(1.05);
+  transition: 1s;
+  cursor: pointer;
+  opacity: 0.8;
+}

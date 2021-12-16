@@ -1,0 +1,33 @@
+.button-area {
+  padding: 5rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+}
+
+.btn {
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  width: 5rem;
+  overflow: hidden;
+  border: 2px solid #fff;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  color: red;
+}
+
+#rick-picture {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  height: 15rem;
+  width: 35rem;
+}

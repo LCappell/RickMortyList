@@ -1,0 +1,30 @@
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+/* Images */
+
+#logo-img {
+  width: 20rem;
+  height: 5rem;
+}
+
+.character-img {
+  margin: 0 1.5rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+.character-img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+@media only screen and (max-width: 500px) {
+  .character-img {
+    display: none;
+  }
+}
