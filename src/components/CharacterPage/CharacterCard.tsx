@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { Character } from '../../Types/Character';
+import '../../styles/CharacterPage/CharacterCard.css';
 
 type Props = {
   characterInfo: Character;
@@ -7,7 +8,7 @@ type Props = {
 
 const CharacterCard: FC<Props> = ({ characterInfo }) => {
   return (
-    <div className='container'>
+    <div className='card-container'>
       <div className='card'>
         <div className='card-header'>
           <h1>{characterInfo.name}</h1>

@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from 'react';
-import '../../styles/CharacterList.css';
+import '../../styles/ListPage/CharacterList.css';
 import { fetchData } from '../../Service/ApiService';
 import CharacterItem from './CharacterItem';
 import ButtonBar from './ButtonBar';
