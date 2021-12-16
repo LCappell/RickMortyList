@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../components/Header';
-import CharacterList from '../components/CharacterList';
+import Header from '../components/ListPage/Header';
+import CharacterList from '../components/ListPage/CharacterList';
 
 const ListPage = () => {
   return (
