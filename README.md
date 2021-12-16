@@ -9,4 +9,7 @@ To get started:
 - run npm start to start up the project 
 - run npm test to view the tests 
 
+Thank you and I hope you like the code!
+
+
 
