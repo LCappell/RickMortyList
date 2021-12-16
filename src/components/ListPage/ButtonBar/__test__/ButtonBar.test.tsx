@@ -1,5 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import { Character } from '../../../../Types/Character';
+import RickPicture from '../../../../assets/rickmortybg.jpeg';
+
 import ButtonBar from '../ButtonBar';
 
 const mockedUsedNavigate = jest.fn();
@@ -18,7 +19,7 @@ describe('Pagination Buttons', () => {
     expect(buttons[1]).toHaveTextContent('Next');
   });
 
-  test('Previous Button successfully emit event', () => {
+  test('Button successfully emit event', () => {
     const id: number = 1;
     render(<ButtonBar id={id} />);
     const buttons = screen.getAllByRole('button');
@@ -26,11 +27,10 @@ describe('Pagination Buttons', () => {
     expect(id).toEqual(1);
   });
 
-  test('Next Button successfully emit event', () => {
+  test('Image is being displayed', () => {
     const id: number = 0;
     render(<ButtonBar id={id} />);
-    const buttons = screen.getAllByRole('button');
-    fireEvent.click(buttons[1]);
-    expect(id).toEqual(1);
+    const image = screen.getByRole('img');
+    expect(image).toHaveAttribute('src', RickPicture);
   });
 });
