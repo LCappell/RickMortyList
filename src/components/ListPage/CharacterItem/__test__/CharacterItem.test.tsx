@@ -3,7 +3,7 @@ import { Character } from '../../../../Types/Character';
 import CharacterItem from '../../CharacterItem/CharacterItem';
 
 const mockData: Character = {
-  name: 'Lous',
+  name: 'Louis',
   gender: 'male',
   status: 'alive',
   location: { name: 'London', url: '' },
@@ -29,7 +29,6 @@ describe('List of Characters', () => {
   });
 
   test('Should render image of character', async () => {
-    // @ts-ignore
     render(<CharacterItem item={mockData} />);
     const characterImage = screen.getByRole('img');
     expect(characterImage).toHaveAttribute('alt', 'character profile');

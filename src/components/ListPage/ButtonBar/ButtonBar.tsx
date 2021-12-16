@@ -4,21 +4,23 @@ import RickPicture from '../../../assets/rickmortybg.jpeg';
 import { useNavigate } from 'react-router-dom';
 
 type Props = {
-  id: number;
+  id: string | number;
 };
 
 const ButtonBar: FC<Props> = ({ id }) => {
+  // Change url id from type string into number
+  id = +id;
   const navigate = useNavigate();
 
   const increasePageCount = () => {
-    if (id >= 0 && id < 42) {
+    if (id >= 0 && id < 42 && typeof id == 'number') {
       id++;
       navigate('/' + id);
     }
   };
 
   const decreasePageCount = () => {
-    if (id > 1) {
+    if (id > 1 && typeof id == 'number') {
       id--;
       navigate('/' + id);
     }
@@ -30,13 +32,7 @@ const ButtonBar: FC<Props> = ({ id }) => {
         Previous
       </button>
 
-      <button
-        className='btn'
-        type='button'
-        onClick={() => {
-          increasePageCount();
-        }}
-      >
+      <button className='btn' type='button' onClick={increasePageCount}>
         Next
       </button>
 
