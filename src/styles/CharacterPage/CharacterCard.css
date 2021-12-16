@@ -2,16 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 80vh;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .card {
-  width: 40vw;
+  min-width: 40vw;
   height: 80vh;
-  border: 1px solid rgb(0, 255, 255, 0.6);
-  box-shadow: rgba(241, 139, 139, 0.35) 5px 5px 15px;
+  border: 2px solid rgb(0, 255, 255, 0.6);
+  box-shadow: rgb(0, 255, 255, 0.6) 5px 5px 15px;
   border-radius: 1rem;
   display: flex;
   justify-content: space-evenly;
@@ -21,10 +19,6 @@
 }
 
 .card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
   position: absolute;
   top: 0;
   letter-spacing: 1;
@@ -40,7 +34,9 @@
 }
 
 .character-info {
+  font-size: 1.2rem;
   color: #fff;
   line-height: 2;
-  margin-top: 10rem;
+  margin-top: 15rem;
+  margin-left: 10px;
 }

@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { useLocation } from 'react-router-dom';
 import CharacterCard from '../components/CharacterPage/CharacterCard';
+import CharacterHeader from '../components/CharacterPage/CharacterHeader';
+import { Character } from '../Types/Character';
 
-const CharacterPage = () => {
+const CharacterPage: FC = () => {
   const location = useLocation();
-  const characterInfo = location.state;
+  const characterInfo: Character = location.state;
   return (
     <div>
+      <CharacterHeader />
       <CharacterCard characterInfo={characterInfo} />
     </div>
   );

@@ -10,14 +10,14 @@
 /* Title Area */
 .header-area {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 #character-list-header {
   letter-spacing: 1;
   font-size: 30px;
-  padding-left: 4rem;
+  margin-left: 4rem;
   color: #fff;
 }
 

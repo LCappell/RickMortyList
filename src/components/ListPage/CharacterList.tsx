@@ -17,7 +17,7 @@ const CharacterList: FC = () => {
   return (
     <div className='container'>
       <div className='header-area'>
-        <h1 id='character-list-header'>Character List</h1>
+        <h1 id='character-list-header'>The Cast of Rick and Morty </h1>
       </div>
       <div className='character-list-area'>
         {characters.map((item: Character) => (
