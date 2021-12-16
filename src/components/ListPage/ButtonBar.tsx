@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import '../styles/ButtonBar.css';
-import RickPicture from '../assets/rickmortybg.jpeg';
+import '../../styles/ButtonBar.css';
+import RickPicture from '../../assets/rickmortybg.jpeg';
 
 type Props = {
   pageCount: number;
