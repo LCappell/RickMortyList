@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import '../../styles/ListPage/ButtonBar.css';
-import RickPicture from '../../assets/rickmortybg.jpeg';
+import './ButtonBar.css';
+import RickPicture from '../../../assets/rickmortybg.jpeg';
 import { useNavigate } from 'react-router-dom';
 
 type Props = {
@@ -9,6 +9,7 @@ type Props = {
 
 const ButtonBar: FC<Props> = ({ id }) => {
   const navigate = useNavigate();
+
   const increasePageCount = () => {
     if (id >= 0 && id < 42) {
       id++;
