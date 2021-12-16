@@ -9,9 +9,11 @@ const App: FC = () => {
     <div>
       <Router>
         <Routes>
+          {/* Home Routes */}
           <Route path='/' element={<ListPage />} />
           <Route path='/:id' element={<ListPage />} />
-
+          {/* Character Routes */}
+          <Route path='/character-info' element={<CharacterPage />} />
           <Route path='/:id/character-info' element={<CharacterPage />} />
         </Routes>
       </Router>
