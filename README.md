@@ -1,15 +1,3 @@
 
-Hello!
-
-To get started:
-
-- I have used VSCode as my IDE
-- From the root directory: 
-- run npm i to install dependencies: react-router-dom and react-icons
-- run npm start to start up the project 
-- run npm test to view the tests 
-
-Thank you and I hope you like the code!
-
-
-
+Small, fun project I created to display Rick and Morty characters and their information . 
+I used React, React Router v6 and TypeScript 
